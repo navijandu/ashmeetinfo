@@ -51,7 +51,35 @@
                     scrollTop: scrollto
                 }, 1500, 'easeInOutExpo');
             }
-        }
+        };
+        $("#contact").click(function () {
+
+            var cName = $("#name").val();
+            var cEmail = $("#email").val();
+            var cSubject = $("#subject").val();
+            var cMessage = $("#message").val();
+
+            var contactinfo = {
+                "name": cName,
+                "email": cEmail,
+                "subject": cSubject,
+                "message": cMessage
+            };
+            var settings = {
+                "url": "https://ser91.herokuapp.com/sendEmail",
+                "method": "POST",
+                "headers": {
+                    "Content-Type": "application/json"
+                },
+                "data": JSON.stringify(entry),
+            };
+
+            $.ajax(settings).done(function (response) {
+                console.log(response)
+
+            });
+        });
+
     });
 
     $(document).on('click', '.mobile-nav-toggle', function (e) {
@@ -146,23 +174,7 @@
         });
     });
 
-    // Testimonials carousel (uses the Owl Carousel library)
-    $(".testimonials-carousel").owlCarousel({
-        autoplay: true,
-        dots: true,
-        loop: true,
-        responsive: {
-            0: {
-                items: 1
-            },
-            768: {
-                items: 2
-            },
-            900: {
-                items: 3
-            }
-        }
-    });
+
 
     // Portfolio details carousel
     $(".portfolio-details-carousel").owlCarousel({
