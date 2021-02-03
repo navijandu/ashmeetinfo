@@ -66,12 +66,12 @@
                 "message": cMessage
             };
             var settings = {
-                "url": "https://ser91.herokuapp.com/sendEmail",
+                "url": "https://3640a788472e.ngrok.io/sendEmail",
                 "method": "POST",
                 "headers": {
                     "Content-Type": "application/json"
                 },
-                "data": JSON.stringify(entry),
+                "data": JSON.stringify(contactinfo),
             };
 
             $.ajax(settings).done(function (response) {
