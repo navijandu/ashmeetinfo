@@ -52,36 +52,36 @@
                 }, 1500, 'easeInOutExpo');
             }
         };
-        $("#contact").click(function () {
 
-            var cName = $("#name").val();
-            var cEmail = $("#email").val();
-            var cSubject = $("#subject").val();
-            var cMessage = $("#message").val();
 
-            var contactinfo = {
-                "name": cName,
-                "email": cEmail,
-                "subject": cSubject,
-                "message": cMessage
-            };
-            var settings = {
-                "url": "https://3640a788472e.ngrok.io/sendEmail",
-                "method": "POST",
-                "headers": {
-                    "Content-Type": "application/json"
-                },
-                "data": JSON.stringify(contactinfo),
-            };
+    });
+    $("#contact").click(function () {
+        var cName = $("#name").val();
+        var cEmail = $("#email").val();
+        var cSubject = $("#subject").val();
+        var cMessage = $("#message").val();
 
-            $.ajax(settings).done(function (response) {
-                console.log(response)
+        var contactinfo = {
+            "name": cName,
+            "email": cEmail,
+            "subject": cSubject,
+            "message": cMessage
+        };
+        var settings = {
+            "url": "https://ser91.herokuapp.com/sendEmail",
+            "method": "POST",
+            "headers": {
+                "Content-Type": "application/json"
+            },
+            "data": JSON.stringify(contactinfo),
+        };
 
-            });
+        $.ajax(settings).done(function (response) {
+            console.log(response)
+
         });
 
     });
-
     $(document).on('click', '.mobile-nav-toggle', function (e) {
         $('body').toggleClass('mobile-nav-active');
         $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
@@ -196,4 +196,7 @@
         aos_init();
     });
 
+    function email() {
+
+    }
 })(jQuery);
