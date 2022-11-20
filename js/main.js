@@ -55,7 +55,7 @@
 
 
     });
-    $("#contact").click(function () {
+    /*$("#contact").click(function () {
         var cName = $("#name").val();
         var cEmail = $("#email").val();
         var cSubject = $("#subject").val();
@@ -81,7 +81,11 @@
 
         });
 
-    });
+    });*/
+    //Contact form 
+   
+
+
     $(document).on('click', '.mobile-nav-toggle', function (e) {
         $('body').toggleClass('mobile-nav-active');
         $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
@@ -173,8 +177,31 @@
             $('.venobox').venobox();
         });
     });
+//Email
 
-
+var btn = document.getElementById('sendMessage');
+btn.addEventListener('click', function(e){
+    e.preventDefault()
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var subject = document.getElementById('subject').value;
+    var message = document.getElementById('message').value;
+    var body = 'name: ' + name + '<br/> Email: ' + email + '<br/> Subject: ' + subject + '<br/> Message: ' +message; 
+    
+    
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Port: 2525,
+        Username : "ashmeetsingh2010@gmail.com",
+        Password : "2BB97CAF2C228D27051840586C6E37DFD932",
+        To : 'ashmeetsingh2010@gmail.com',
+        From : "ashmeetsingh2010@gmail.com",
+        Subject : 'subject',
+        Body : body
+    }).then(
+        message => alert("Messenge Successfully sent")
+    );
+})
 
     // Portfolio details carousel
     $(".portfolio-details-carousel").owlCarousel({

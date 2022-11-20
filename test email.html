@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+
+          
+<div class="form">
+<form method="post">
+    <input type="text" id="name" placeholder="name">
+    <input type="text" id="email"  placeholder="email">
+    <input type="text" id="subject"  placeholder="subject">
+    <input type="text" id="message"  placeholder="message">
+    <button id="btn">Send</button>
+</form>
+
+</div>
+</body>
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+<script>
+    var btn = document.getElementById('btn');
+    btn.addEventListener('click', function(e){
+        e.preventDefault()
+var name = document.getElementById('name').value;
+var email = document.getElementById('email').value;
+var subject = document.getElementById('subject').value;
+var message = document.getElementById('message').value;
+var body = 'name:' + name + '<br/> last:' + email + '<br/> subject' + subject + '<br/> message' +message; 
+
+
+    Email.send({
+    Host : "smtp.elasticemail.com",
+    Port: 2525,
+    Username : "ashmeetsingh2010@gmail.com",
+    Password : "2BB97CAF2C228D27051840586C6E37DFD932",
+    To : 'ashmeetsingh2010@gmail.com',
+    From : "ashmeetsingh2010@gmail.com",
+    Subject : 'subject',
+    Body : body
+}).then(
+  message => alert(message)
+);
+    })
+
+</script>
+
+    
+
+</html>

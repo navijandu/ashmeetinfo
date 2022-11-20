@@ -80,6 +80,7 @@ h6 {
     display: block;
     width: 120px;
     border: 8px solid #2c2f3f;
+    
 }
 
 #header .profile h1 {
@@ -496,6 +497,7 @@ section {
     position: relative;
     overflow: hidden;
     z-index: 1;
+    height: 250px;
 }
 
 .portfolio .portfolio-wrap::before {
