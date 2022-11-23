@@ -20,9 +20,7 @@
             e.preventDefault();
             var target = $(this.hash);
             if (target.length) {
-
                 var scrollto = target.offset().top;
-
                 $('html, body').animate({
                     scrollTop: scrollto
                 }, 1500, 'easeInOutExpo');
@@ -155,9 +153,9 @@
         offset: '80%'
     });
 
-    // Porfolio isotope and filter
+    // rojects according to filter
     $(window).on('load', function () {
-        var portfolioIsotope = $('.portfolio-container').isotope({
+        var portfolioIsotope = $('.portject-filters').isotope({
             itemSelector: '.portfolio-item',
             layoutMode: 'fitRows'
         });
