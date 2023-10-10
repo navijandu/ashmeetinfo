@@ -66,14 +66,13 @@ h6 {
     top: 0;
     left: 0;
     bottom: 0;
-    width: 100px;
+    width: 300px;
     transition: all ease-in-out 0.5s;
     z-index: 9997;
     transition: all 0.5s;
     padding: 0 15px;
     background: #040b14;
     overflow-y: auto;
-    
 }
 
 #header .profile img {
@@ -81,7 +80,6 @@ h6 {
     display: block;
     width: 120px;
     border: 8px solid #2c2f3f;
-    
 }
 
 #header .profile h1 {
@@ -122,9 +120,7 @@ h6 {
 }
 
 #main {
-    margin-left: 3%;
-    background-color: rgba(0, 0, 0, 0.904);
-    color: white;
+    margin-left: 300px;
 }
 
 @media (max-width: 1199px) {
@@ -140,7 +136,7 @@ h6 {
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
-/* Desktop Navigation icons*/
+/* Desktop Navigation */
 .nav-menu {
     padding-top: 30px;
 }
@@ -294,7 +290,7 @@ section {
 }
 
 .section-bg {
-    background: #302e2e54;
+    background: #f5f8fd;
 }
 
 .section-title {
@@ -308,13 +304,7 @@ section {
     padding-bottom: 20px;
     position: relative;
     color: #173b6c;
-
 }
-.section-title h2:hover{
-
-    cursor: pointer;
-}
-
 
 .section-title h2::after {
     content: '';
@@ -359,34 +349,61 @@ section {
     margin-bottom: 0;
 }
 
+/*--------------------------------------------------------------
+# Facts
+--------------------------------------------------------------*/
+
 
 /*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/
-.skill {
+.skills .progress {
+    height: 60px;
+    display: block;
+    background: none;
+    border-radius: 0;
+}
+
+.skills .progress .skill {
+    padding: 0;
+    margin: 0 0 6px 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #050d18;
+}
+
+.skills .progress .skill .val {
+    float: right;
+    font-style: normal;
+}
+
+.skills .progress-bar-wrap {
+    background: #dce8f8;
+    height: 10px;
+}
+
+.skills .progress-bar {
+    width: 1px;
+    height: 10px;
+    transition: .9s;
+    background-color: #149ddd;
+}
+
+/*--------------------------------------------------------------
+# Certificate
+--------------------------------------------------------------*/
+#Certificate{
+    background: ;
+}
+.cert-info{
     
 }
-.column {
-    cursor: pointer;
-    width: 12%;
-    padding: 5px;
-  }
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  .column p{
-    text-align: center;
-    text-transform: uppercase;
-  }
-  @media screen and (max-width: 500px) {
-    .column {
-      width: 100%;
-    }
-  }
-
-
+.cert-img{   
+    width: auto;
+    height: 50%;  
+}
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
@@ -395,7 +412,7 @@ section {
     font-weight: 700;
     margin-top: 20px;
     margin-bottom: 20px;
-    color: #1f5297;
+    color: #050d18;
 }
 
 .resume .resume-item {
@@ -411,19 +428,17 @@ section {
     font-weight: 600;
     text-transform: uppercase;
     font-family: "Poppins", sans-serif;
-    color: #1f5297;
+    color: #050d18;
     margin-bottom: 10px;
 }
 
 .resume .resume-item h5 {
     font-size: 16px;
-    background: #1f5297;
+    background: #e4edf9;
     padding: 5px 15px;
     display: inline-block;
     font-weight: 600;
     margin-bottom: 10px;
-    border-radius: 5%;
-    box-shadow: #1f5297 0px 0px 3px 3px;
 }
 
 .resume .resume-item ul {
@@ -489,27 +504,12 @@ section {
     margin-right: 0;
 }
 
-.portfolio-wrap{
-    padding: 1%;
-
-}
-
 .portfolio .portfolio-wrap {
     transition: 0.3s;
     position: relative;
     overflow: hidden;
     z-index: 1;
-    height: 100%;
-    border-radius: 5%;
-    
 }
-.portfolio-wrap .projects{
-    background-position: center;
-   
-    height: 100%;
-    padding: 1px;
-    border-radius: 5%;
-    }
 
 .portfolio .portfolio-wrap::before {
     content: "";
@@ -522,7 +522,6 @@ section {
     transition: all ease-in-out 0.3s;
     z-index: 2;
     opacity: 0;
-    cursor: pointer;
 }
 
 .portfolio .portfolio-wrap .portfolio-links {
@@ -576,10 +575,9 @@ section {
 
 .contact .info {
     padding: 30px;
-    background: rgba(39, 35, 35, 0.767);
+    background: #fff;
     width: 100%;
-    border-radius: 5%;
-    box-shadow: 0 0 24px 0 rgba(209, 203, 203, 0.445);
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
 
 .contact .info i {
@@ -588,13 +586,12 @@ section {
     float: left;
     width: 44px;
     height: 44px;
-    background: #81868b;
+    background: #dff3fc;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50px;
     transition: all 0.3s ease-in-out;
-    cursor: pointer;
 }
 
 .contact .info h4 {
@@ -602,14 +599,14 @@ section {
     font-size: 22px;
     font-weight: 600;
     margin-bottom: 5px;
-    color: #e0e4eb;
+    color: #050d18;
 }
 
 .contact .info p {
     padding: 0 0 10px 60px;
     margin-bottom: 20px;
     font-size: 14px;
-    color: #e0e4eb;
+    color: #173b6c;
 }
 
 .contact .info .email p {
@@ -624,7 +621,7 @@ section {
     font-size: 18px;
     display: inline-block;
     background: #333;
-    color: #81868b;
+    color: #fff;
     line-height: 1;
     padding: 8px 0;
     border-radius: 50%;
@@ -650,9 +647,8 @@ section {
 .contact .php-email-form {
     width: 100%;
     padding: 30px;
-    border-radius: 5%;
-    background: rgba(39, 35, 35, 0.767);
-    box-shadow: 0 0 24px 0 rgba(209, 203, 203, 0.445);
+    background: #fff;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
 
 .contact .php-email-form .form-group {
@@ -703,7 +699,7 @@ section {
     width: 24px;
     height: 24px;
     margin: 0 10px -6px 0;
-    border: 3px solid #6843eb;
+    border: 3px solid #18d26e;
     border-top-color: #eee;
     -webkit-animation: animate-loading 1s linear infinite;
     animation: animate-loading 1s linear infinite;
