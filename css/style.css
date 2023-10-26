@@ -395,15 +395,41 @@ section {
 # Certificate
 --------------------------------------------------------------*/
 #Certificate{
-    background: ;
+    background: ;   
 }
 .cert-info{
     
 }
-.cert-img{   
-    width: auto;
-    height: 50%;  
+.cert-info img {
+    height: 80%;
+    width: 100%;
+    border-radius: 2%;
 }
+
+.cert-button{
+   height: 10%;
+    position: relative;
+    margin-top: 5%;
+}
+
+.cert-center{
+margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.cert-center button{
+    background: #149ddd;
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 4px;
+}
+
+
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
