@@ -2,543 +2,279 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashmeet Singh Jandu | Portfolio</title>
 
-    <title>Ashmeet Singh Jandu</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- AOS.js -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <!-- Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 
-    <!-- Favicons -->
-    <link href="https://www.pngarts.com/files/3/Letter-A-PNG-Image-Transparent.png" rel="icon">
-    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-    <!-- Vendor CSS Files -->
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-    <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-
-    <!-- Template Main CSS File -->
-    <link href="css/style.css" rel="stylesheet">
-
+    
 </head>
 
 <body>
 
-    <!-- ======= Mobile nav toggle button ======= -->
-    <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+    <!-- Particles Background -->
+    <div id="particles-js" class="hero-bg"></div>
 
-    <!-- ======= Header ======= -->
-    <header id="header">
-        <div class="d-flex flex-column">
+    <!-- Sticky Side Navigation -->
+    <nav class="side-nav hidden md:block">
+        <a href="#hero" title="Home"><i class='bx bx-home'></i></a>
+        <a href="#about" title="About"><i class='bx bx-user'></i></a>
+        <a href="#skills" title="Skills"><i class='bx bx-code-alt'></i></a>
+        <a href="#certificate" title="Certificates"><i class='bx bx-certificate'></i></a>
+        <a href="#resume" title="Resume"><i class='bx bx-file-blank'></i></a>
+        <a href="#portfolio" title="Portfolio"><i class='bx bx-briefcase'></i></a>
+        <a href="#contact" title="Contact"><i class='bx bx-envelope'></i></a>
+        <link rel="stylesheet" href="css/style.css">
+    </nav>
 
-            <div class="profile">
-                <img src="img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
-                <h1 class="text-light"><a href="index.html"></a>Ashmeet Singh</h1>
-                <div class="social-links mt-3 text-center">
-                    <a href="https://twitter.com/ashmeet_jandu" class="twitter"><i class="bx bxl-twitter"></i></a>
-                    <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                    <a href="https://www.instagram.com/ashmeet.navi/?hl=en" class="instagram"><i class="bx bxl-instagram"></i></a>
-                    <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                    <a href="https://www.linkedin.com/in/ashmeetsinghjandu/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-                </div>
-            </div>
-
-            <nav class="nav-menu">
-                <ul>
-                    <li class="active"><a href="#hero"><i class="bx bx-home"></i> <span>Home</span></a></li>
-                    <li><a href="#about"><i class="bx bx-user"></i> <span>About</span></a></li>
-                    <li><a href="#Certificate"><i class="bx bx-note"></i> <span>Certificate</span></a></li>
-                    <li><a href="#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-                    <li><a href="#portfolio"><i class="bx bx-book-content"></i> Portfolio</a></li>
-                    <li><a href="#contact"><i class="bx bx-envelope"></i> Contact</a></li>
-                </ul>
-            </nav>
-            <!-- .nav-menu -->
-            <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
-
-        </div>
-    </header><!-- End Header -->
-
-    <!-- ======= Hero Section ======= -->
-    <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-
-        <div class="hero-container" data-aos="fade-in">
-            <h1>Ashmeet Singh</h1>
-            <p>I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer"></span></p>
+    <!-- Hero Section -->
+    <section id="hero" class="h-screen flex flex-col justify-center items-center text-center relative overflow-hidden">
+        <h1 class="text-6xl md:text-7xl font-bold animate__animated animate__fadeInDown mb-4">Ashmeet Singh Jandu</h1>
+        <p class="text-2xl md:text-3xl mb-6 animate__animated animate__fadeInUp">I'm a <span class="typed"></span></p>
+        <div class="flex space-x-4 animate__animated animate__fadeInUp animate__delay-1s">
+            <a href="#resume" class="px-6 py-3 bg-yellow-400 text-gray-900 font-semibold rounded hover:bg-yellow-500 transition">Resume</a>
+            <a href="#portfolio" class="px-6 py-3 border-2 border-yellow-400 rounded hover:bg-yellow-400 hover:text-gray-900 transition">Portfolio</a>
         </div>
     </section>
-    <!-- End Hero -->
 
-    <main id="main">
+    <main class="container mx-auto px-4 text-center">
 
-        <!-- ======= About Section ======= -->
-        <section id="about" class="about">
-            <div class="container">
-
-                <div class="section-title">
-                    <h2>About</h2>
-                    <p>Strong 4 years of experience as an IT Technician, troubleshooting client's hardware, software, and networking issues.</p>
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-4" data-aos="fade-right">
-                        <img src="img/profile-img.jpg" class="img-fluid" alt="">
-                    </div>
-                    <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-                        <h3>Full Stack Developer &amp; Designer.</h3>
-                        <p class="font-italic">
-                            I love to develop web and mobile applications based on requirement.
-                        </p>
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <ul>
-                                    <li><i class="icofont-rounded-right"></i> <strong>Birthday:</strong> 1 January</li>
-                                    <li><i class="icofont-rounded-right"></i> <strong>Website:</strong> www.ashmeetinfo.ca</li>
-                                    <li><i class="icofont-rounded-right"></i> <strong>Phone:</strong> +1 226 972 5795</li>
-                                    <li><i class="icofont-rounded-right"></i> <strong>City:</strong> Toronto, CANADA</li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-6">
-                                <ul>
-                                    <li><i class="icofont-rounded-right"></i> <strong>Age:</strong> 29</li>
-                                    <li><i class="icofont-rounded-right"></i> <strong>Degree:</strong> Post-Graduation</li>
-                                    <li><i class="icofont-rounded-right"></i> <strong>Freelance:</strong> Available</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <p>
-
-                        </p>
-                    </div>
-                </div>
-
+        <!-- About Section -->
+        <section id="about" class="py-24">
+            <div class="section-title" data-aos="fade-up">
+                <h2>About Me</h2>
+                <p>Detail-oriented IT professional with 4 years of experience in technical support, system administration, and web development.</p>
             </div>
-        </section>
-        <!-- End About Section -->
-
-        <!-- ======= Skills Section ======= -->
-        <section id="skills" class="skills section-bg">
-            <div class="container">
-
-                <div class="section-title">
-                    <h2>Skills</h2>
-                    <p>In the majority of front- and server-side languages, I have more than five years of experience. Database expert in SQL and MongoDb.</p>
-                </div>
-
-                <div class="row skills-content">
-
-                    <div class="col-lg-6" data-aos="fade-up">
-
-                        <div class="progress">
-                            <span class="skill">HTML/HTML5 <i class="val">90%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="90"></div>
-                            </div>
-                        </div>
-
-                        <div class="progress">
-                            <span class="skill">CSS/Sass <i class="val">85%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-
-                        <div class="progress">
-                            <span class="skill">JavaScript <i class="val">75%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-
-                        <div class="progress">
-                            <span class="skill">JQuery <i class="val">90%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-
-                        <div class="progress">
-                            <span class="skill">React <i class="val">80%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-
-                        <div class="progress">
-                            <span class="skill">Node.Js <i class="val">65%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-
-                        <div class="progress">
-                            <span class="skill">MongoDb <i class="val">80%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-
-                        <div class="progress">
-                            <span class="skill">REST API <i class="val">70%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-
-                        <div class="progress">
-                            <span class="skill">Git Hub <i class="val">80%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-
-                        <div class="progress">
-                            <span class="skill">MySQL <i class="val">60%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="progress">
-                            <span class="skill">Android Development <i class="val">40%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="progress">
-                            <span class="skill">IOS Swift <i class="val">30%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        
-        <!-- End Skills Section -->
-        
-                <!-- ======= Certificate ======= -->
-        <section id="Certificate" class="section-bg" >
-            <div class="container">
-
-                <div class="section-title">
-                    <h2>Certification</h2>           
-                </div>
-                <div class="row cert-info"> 
-                    <div class="col-lg-6">
-                        <a href="https://www.credly.com/badges/9be2985a-5891-4604-8db7-8a1d5d624c04/public_url">  <img src="img/comptia.png" class="cert-img"> </a>
-                        <div class="cert-button">
-                            <div class="cert-center">  
-                                <a href="https://www.credly.com/badges/9be2985a-5891-4604-8db7-8a1d5d624c04/public_url"> 
-                                <button>Verify </button> </a> 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <a href="https://www.coursera.org/account/accomplishments/certificate/SKCR9KMQYWRA">   <img src="img/Coursera.jpg" class="cert-img"> </a>
-                        
-                        
-                        <div class="cert-button">
-                              <div class="cert-center">
-                                     <a href="https://www.coursera.org/account/accomplishments/certificate/SKCR9KMQYWRA">   <button>Verify</button> </a> 
-                              </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-   <!-- ======= End Certificate Section ======= -->     
-
-
-        <!-- ======= Resume Section ======= -->
-        <section id="resume" class="resume">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Resume</h2>
-                    
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-6" data-aos="fade-up">
-                        
-                        <div class="resume-item pb-0">
-                            <h4>Ashmeet Singh</h4>
-                            <p><em></em></p>
-                            <ul>
-                                <li>51 Apple Dr Cambridge</li>
-                                <li>(+1)226 972-5795</li>
-                                <li>infoashmeet2018@gmail.com</li>
-                            </ul>
-                        </div>
-
-                        <h3 class="resume-title">Education</h3>
-                        <div class="resume-item">
-                            <h4>Mobile Solution Development </h4>
-                            <h5>2017 - 2018</h5>
-                            <p><em>Conestoga College , Kitchener, ON</em></p>
-                            <p>This program gave strong practical background in mobile solutions design and development thatencompasses different devices, operating systems, database and network infrastructures, as well ascoverage of software quality and the security aspects to mobile solutions development.</p>
-                        </div>
-                        <div class="resume-item">
-                            <h4>Bachelor of Technology (B.Tech.), Computer Science</h4>
-                            <h5>2011 - 2014</h5>
-                            <p><em>Guru Gobind Singh Group of Colleges, Talwandi Sabbo, INDIA</em></p>
-                            <p>Design solutions for complex engineering problems and design system components.Use research-based knowledge and research methods including design of experiments, analysis</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                        <h3 class="resume-title">Professional Experience</h3>
-                        
-                         <div class="resume-item">
-                            <h4>Campus Services Support</h4>
-                            <h5>July-2023 - Present</h5>
-                            <p><em>Conestoga College</em></p>
-                            <ul>
-                                <li>We provide customer service and assistance for students, staff, and visitors/guests via email, phone,
-online chat, and in-person.</li>
-                                <li>Working with the team for photo approval, individual printing, batch card printing/activation, card
-organization, card distribution, and report management</li>
-                                <li>Managing office supplies maintaining organized workspace and maintaining digital files.</li>
-                                <li>Participates in the creation and maintenance of activity data collecting and visualization along with the
-Manager and the Campus Service team</li>
-                                
-                            </ul>
-                        </div>
-                        
-                        
-                        <div class="resume-item">
-                            <h4>Technical Support Team Lead</h4>
-                            <h5>March-2020 - March-2022</h5>
-                            <p><em>Gatestone &amp; Co., Brantford, ON </em></p>
-                            <ul>
-                                <li>Processing requests received through voice or electronic means and addressing ticketing/requests</li>
-                                <li>Managing access to clients or agents using Active Directory </li>
-                                <li>Follow communication procedures, guidelines, and web standards.</li>
-                                <li>Troubleshooting for VPN connections for remote access to install, and configure</li>
-                                <li>Technical training on-site/off-site staff members on Windows, Anti-virus, iPhone, or network
-troubleshooting</li>
-                                <li>Investigate effectively with team members and implement strategies to increase profitability, productivity,
-and overall client experience</li>
-                            </ul>
-                        </div>
-                       <div class="resume-item">
-                            <h4>Technical Support Representative</h4>
-                            <h5>Jan-2019 - March-2020 </h5>
-                            <p><em>Gatestone &amp; Co., Brantford, ON </em></p>
-                            <ul>
-                                <li>Provide technical support and troubleshooting for operating systems (Mac, Windows, Linux) devices
-network connectivity and software installation.</li>
-                                <li>Escalate incidents with accurate documentation to suitable technicians when required. </li>
-                                <li>Experience with VMware/Hyper-V applications and help desk software and overall IT support.</li>
-                                <li>Install and upgrade Antivirus software and provide endpoint security with Gmail accounts, Google Drive,
-and Microsoft Office 365</li>
-                                <li>Connect with the team using video conferencing or Zoom meetings and work on different ticketing
-systems (ServiceNow and Jira)</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section><!-- End Resume Section -->
-
-        <!-- ======= Portfolio Section ======= -->
-        <section id="portfolio" class="portfolio section-bg">
-            <div class="container">
-
-                <div class="section-title">
-                    <h2>Portfolio</h2>
-                    <p>Creating designs for mobile applications, internet, and a multitude of languages.  </p>
-                </div>
-
-                <div class="row" data-aos="fade-up">
-                    <div class="col-lg-12 d-flex justify-content-center">
-                        <ul id="portfolio-flters">
-                            <li data-filter="*" class="filter-active">All</li>
-                            <li data-filter=".filter-app">App</li>
-                            <li data-filter=".filter-game">Game</li>
-                            <li data-filter=".filter-web">Web</li>
+            <div class="flex flex-col md:flex-row justify-center items-center md:space-x-12 mt-12">
+                <img src="img/profile-img.jpg" class="w-64 h-64 rounded-xl shadow-lg" data-aos="fade-right">
+                <div class="mt-6 md:mt-0 max-w-xl" data-aos="fade-left">
+                    <h3 class="text-2xl font-semibold mb-4">Who am I?</h3>
+                    <p class="text-gray-300 mb-4">
+                        I combine technical expertise with exceptional problem-solving skills to deliver efficient IT solutions. Experienced in team leadership, inventory management, and enhancing operational workflows. Known for maintaining a positive attitude and ensuring excellent user experiences.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
+                        <ul class="space-y-1">
+                            <li><strong>Birthday:</strong> 1 January</li>
+                            <li><strong>Website:</strong> www.ashmeetinfo.ca</li>
+                            
+                            <li><strong>City:</strong> CANADA</li>
+                        </ul>
+                        <ul class="space-y-1">
+                            
+                            <li><strong>Degree:</strong> Post-Graduation</li>
+                            <li><strong>Freelance:</strong> Available</li>
+                            <li><strong>Phone:</strong> +1 226 972 5795</li>
                         </ul>
                     </div>
                 </div>
-
-                <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-game">
-                        <div class="portfolio-wrap">
-                            <img src="img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-                            <div class="portfolio-links">
-                                <a href="img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
-                                <a href="https://tic-tac-toe-91.herokuapp.com/" title="More Details"><i class="bx bx-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-game">
-                        <div class="portfolio-wrap">
-                            <img src="img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-                            <div class="portfolio-links">
-                                <a href="img/portfolio/portfolio-2.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-                                <a href="https://memory-game91.herokuapp.com/" title="More Details"><i class="bx bx-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <div class="portfolio-wrap">
-                            <img src="img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-                            <div class="portfolio-links">
-                                <a href="img/portfolio/portfolio-3.jpg" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="bx bx-plus"></i></a>
-                                <a href="https://crud-app91.herokuapp.com/" title="More Details"><i class="bx bx-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-game">
-                        <div class="portfolio-wrap">
-                            <img src="img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-                            <div class="portfolio-links">
-                                <a href="img/portfolio/portfolio-4.jpg" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="bx bx-plus"></i></a>
-                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                        <div class="portfolio-wrap">
-                            <img src="img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-                            <div class="portfolio-links">
-                                <a href="img/portfolio/portfolio-5.jpg" data-gall="portfolioGallery" class="venobox" title="Web 2"><i class="bx bx-plus"></i></a>
-                                <a href="#" title="More Details"><i class="bx bx-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </section>
-        <!-- End Portfolio Section -->
+        
 
-
-
-        <!-- ======= Contact Section ======= -->
-        <section class="contact" id="contact">
-            <div class="container">
-
-                <div class="section-title">
-                    <h2>Hire Me..</h2>
-                    <p>If you have a new idea to develop something or want to work together contact me. </p>
+        <!-- Skills Section -->
+        <section id="skills" class="py-24" data-aos="fade-up">
+            <div class="section-title">
+                <h2>Skills</h2>
+                <p>Expertise in technical support, web development, system administration, and operational management.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12 text-left max-w-xl mx-auto">
+                <div>
+                    <h4>Inventory & Supply Management</h4>
+                    <div class="progress-bar-wrap"><div class="progress-bar w-[90%]"></div></div>
+                    <h4>Problem Solving & Adaptability</h4>
+                    <div class="progress-bar-wrap"><div class="progress-bar w-[85%]"></div></div>
+                    <h4>Database Management</h4>
+                    <div class="progress-bar-wrap"><div class="progress-bar w-[80%]"></div></div>
+                    <h4>Microsoft Office</h4>
+                    <div class="progress-bar-wrap"><div class="progress-bar w-[95%]"></div></div>
                 </div>
+                <div>
+                    <h4>Team Leadership & Collaboration</h4>
+                    <div class="progress-bar-wrap"><div class="progress-bar w-[90%]"></div></div>
+                    <h4>Active Directory & IT Administration</h4>
+                    <div class="progress-bar-wrap"><div class="progress-bar w-[85%]"></div></div>
+                    <h4>Web Development</h4>
+                    <div class="progress-bar-wrap"><div class="progress-bar w-[75%]"></div></div>
+                    <h4>Problem-Solving & Troubleshooting</h4>
+                    <div class="progress-bar-wrap"><div class="progress-bar w-[90%]"></div></div>
+                </div>
+            </div>
+        </section>
 
-                <div class="row" data-aos="fade-in">
+        <!-- Certificates Section -->
+        <section id="certificate" class="py-24 bg-gray-900" data-aos="fade-up">
+            <div class="section-title">
+                <h2>Certifications</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12 max-w-4xl mx-auto">
+                <div class="bg-gray-800 p-4 rounded-xl text-center shadow-lg hover:scale-105 transition">
+                    <a href="https://www.credly.com/badges/9be2985a-5891-4604-8db7-8a1d5d624c04/public_url" target="_blank">
+                        <img src="img/comptia.png" class="cert-img" alt="CompTIA A+">
+                        <button class="mt-2 px-4 py-2 bg-yellow-400 rounded hover:bg-yellow-500">Verify</button>
+                    </a>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-xl text-center shadow-lg hover:scale-105 transition">
+                    <a href="https://www.coursera.org/account/accomplishments/certificate/SKCR9KMQYWRA" target="_blank">
+                        <img src="img/Coursera.jpg" class="cert-img" alt="AWS Cloud Practitioner">
+                        <button class="mt-2 px-4 py-2 bg-yellow-400 rounded hover:bg-yellow-500">Verify</button>
+                    </a>
+                </div>
+            </div>
+        </section>
 
-                    <div class="col-lg-5 d-flex align-items-stretch">
-                        <div class="info">
-                            <div class="address">
-                                <i class="icofont-google-map"></i>
-                                <h4>Location:</h4>
-                                <p>51 Apple Dr, Cambridge, ON </p>
-                            </div>
-
-                            <div class="email">
-                                <i class="icofont-envelope"></i>
-                                <h4>Email:</h4>
-                                <p>infoashmeet2018@gmail.com</p>
-                            </div>
-
-                            <div class="phone">
-                                <i class="icofont-phone"></i>
-                                <h4>Call:</h4>
-                                <p>+1 226 972 5795</p>
-                            </div>
-
-                           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2896.5619124345744!2d-80.30850482429061!3d43.44886476562346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b88cede10ec87%3A0x662c2c47794de608!2s51%20Apple%20Dr%2C%20Cambridge%2C%20ON%20N3C%200E7!5e0!3m2!1sen!2sca!4v1696958650896!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-                        </div>
-
+        <!-- Resume Section -->
+        <section id="resume" class="py-24" data-aos="fade-up">
+            <div class="section-title">
+                <h2>Professional Experience</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12 max-w-4xl mx-auto text-left">
+                <!-- Education -->
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">Education</h3>
+                    <div class="mb-6">
+                        <h4 class="font-semibold">Post Graduation, Computer Science</h4>
+                        <h5>Conestoga College | May 2017 – Sep 2018</h5>
+                        <p>Hands-on experience in web & mobile application development.</p>
+                        <p><em>Project: Onkar Food & Spices Admin Panel & Mobile App – Front-End Developer</em></p>
                     </div>
-
-                    <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-                        <form method="POST" role="form" class="php-email-form">
-                            <div class="row">
-                                <div class="form-group col-md-6">
-                                    <label for="name">Your Name</label>
-                                    <input name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                                    <div class="validate"></div>
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <label for="name">Your Email</label>
-                                    <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" />
-                                    <div class="validate"></div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="name">Subject</label>
-                                <input type="text" class="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                                <div class="validate"></div>
-                            </div>
-                            <div class="form-group">
-                                <label for="name">Message</label>
-                                <textarea class="form-control" id="message" name="message" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
-                                <div class="validate"></div>
-                            </div>
-                            <div class="mb-3">
-                                <div class="loading">Loading</div>
-                                <div class="error-message"></div>
-                                <div class="sent-message">Your message has been sent. Thank you!</div>
-                            </div>
-                            <div class="text-center"><button class="btn btn-success" type="submit" id="contact">Send Message</button></div>
-                        </form>
+                    <div class="mb-6">
+                        <h4 class="font-semibold">B.Tech, Computer Science</h4>
+                        <h5>Guru Gobind Singh Indraprastha University</h5>
+                        <p>Strong foundation in computer science and engineering principles.</p>
+                    </div>
+                </div>
+                <!-- Experience -->
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">Experience</h3>
+                    <div class="mb-6">
+                        <h4 class="font-semibold">ONE Card Technician</h4>
+                        <h5>Conestoga College | May 2024 – Present</h5>
+                        <ul class="list-disc ml-5">
+                            <li>Provide technical support and training for staff on card services.</li>
+                            <li>Manage inventory, coordinate operations, and generate reports for decision-making.</li>
+                            <li>Maintain vendor relations, ensuring continuous and efficient service.</li>
+                        </ul>
+                    </div>
+                    <div class="mb-6">
+                        <h4 class="font-semibold">Campus Services Associate</h4>
+                        <h5>Conestoga College | Jul 2023 – Jul 2024</h5>
+                        <ul class="list-disc ml-5">
+                            <li>Delivered exceptional customer service via email, phone, and in-person.</li>
+                            <li>Managed student IDs, parking inquiries, and office supplies for smooth operations.</li>
+                            <li>Collected and visualized activity data to enhance operational efficiency.</li>
+                        </ul>
+                    </div>
+                    <div class="mb-6">
+                        <h4 class="font-semibold">Technical Support Team Lead</h4>
+                        <h5>Shaw Communications | Mar 2020 – Mar 2022</h5>
+                        <ul class="list-disc ml-5">
+                            <li>Led support operations, trained staff, and ensured network and system troubleshooting.</li>
+                            <li>Improved client experience and productivity through strategic support measures.</li>
+                        </ul>
+                    </div>
+                    <div class="mb-6">
+                        <h4 class="font-semibold">Technical Support Representative</h4>
+                        <h5>Gatestone & Co. | Jan 2019 – Mar 2020</h5>
+                        <ul class="list-disc ml-5">
+                            <li>Provided support for OS, networking, software installation, and endpoint security.</li>
+                            <li>Worked with VMware/Hyper-V, ServiceNow, Jira, and remote collaboration tools.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </section><!-- End Contact Section -->
+        </section>
 
-    </main><!-- End #main -->
-
-    <!-- ======= Footer ======= -->
-    <footer id="footer">
-        <div class="container">
-            <div class="credits">
-                Designed by <a href="index.html">Ashmeet Singh</a>
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="py-24 bg-gray-900" data-aos="fade-up">
+            <div class="section-title">
+                <h2>Portfolio</h2>
+                <p>Projects demonstrating web, mobile, and interactive solutions I’ve developed.</p>
             </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 max-w-6xl mx-auto">
+                <div class="bg-gray-800 p-4 rounded-xl shadow-lg hover:scale-105 transition text-center">
+                    <img src="img/portfolio/portfolio-1.jpg" class="w-full rounded" alt="Tic Tac Toe">
+                    <h4 class="mt-2 font-semibold">Tic Tac Toe</h4>
+                    <a href="https://tic-tac-toe-91.herokuapp.com/" target="_blank" class="text-blue-400 hover:text-blue-600">View Project</a>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-xl shadow-lg hover:scale-105 transition text-center">
+                    <img src="img/portfolio/portfolio-2.jpg" class="w-full rounded" alt="Memory Game">
+                    <h4 class="mt-2 font-semibold">Memory Game</h4>
+                    <a href="https://memory-game91.herokuapp.com/" target="_blank" class="text-blue-400 hover:text-blue-600">View Project</a>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-xl shadow-lg hover:scale-105 transition text-center">
+                    <img src="img/portfolio/portfolio-3.jpg" class="w-full rounded" alt="CRUD App">
+                    <h4 class="mt-2 font-semibold">CRUD App</h4>
+                    <a href="https://crud-app91.herokuapp.com/" target="_blank" class="text-blue-400 hover:text-blue-600">View Project</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-24" data-aos="fade-up">
+            <div class="section-title">
+                <h2>Hire Me</h2>
+                <p>Have a project or idea? Let’s collaborate and build something amazing!</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12 max-w-4xl mx-auto">
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg text-left">
+                    <h3 class="text-xl font-semibold mb-4">Contact Info</h3>
+                    <p><strong>Location:</strong> 51 Apple Dr, Cambridge, ON</p>
+                    <p><strong>Email:</strong> infoashmeet2018@gmail.com</p>
+                    <p><strong>Phone:</strong> +1 226 972 5795</p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2896.5619124345744!2d-80.30850482429061!3d43.44886476562346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b88cede10ec87%3A0x662c2c47794de608!2s51%20Apple%20Dr%2C%20Cambridge%2C%20ON%20N3C%200E7!5e0!3m2!1sen!2sca!4v1696958650896!5m2!1sen!2sca"
+                        width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                        class="rounded mt-4"></iframe>
+                </div>
+                <form method="POST" class="bg-gray-800 p-6 rounded-xl shadow-lg flex flex-col space-y-4">
+                    <input type="text" name="name" placeholder="Your Name"
+                        class="p-3 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <input type="email" name="email" placeholder="Your Email"
+                        class="p-3 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <input type="text" name="subject" placeholder="Subject"
+                        class="p-3 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <textarea name="message" rows="5" placeholder="Message"
+                        class="p-3 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                    <button type="submit"
+                        class="px-6 py-3 bg-yellow-400 text-gray-900 font-semibold rounded hover:bg-yellow-500 transition">Send
+                        Message</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+<!-- Floating Resume Download Button -->
+<a href="Ashmeet-Jandu-update.pdf" download
+   class="fixed right-4 bottom-4 bg-yellow-400 text-gray-900 px-4 py-3 rounded-full shadow-lg hover:bg-yellow-500 hover:scale-110 transition z-50 animate__animated animate__pulse animate__infinite">
+   <i class='bx bx-download mr-2'></i> Download Resume
+</a>
+    <!-- Footer -->
+    <footer class="py-6 mt-12 text-center bg-gray-900">
+        <p>&copy; 2026 Ashmeet Singh Jandu. All rights reserved.</p>
+        <div class="flex justify-center space-x-4 mt-2">
+            <a href="#" class="text-gray-400 hover:text-yellow-400"><i class='bx bxl-github'></i></a>
+            <a href="#" class="text-gray-400 hover:text-yellow-400"><i class='bx bxl-linkedin'></i></a>
+            <a href="#" class="text-gray-400 hover:text-yellow-400"><i class='bx bxl-twitter'></i></a>
         </div>
-    </footer><!-- End  Footer -->
+    </footer>
 
-    <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
-
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/jquery/jquery.min.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
-    <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-    <script src="assets/vendor/counterup/counterup.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/venobox/venobox.min.js"></script>
-    <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-    <script src="assets/vendor/typed.js/typed.min.js"></script>
-    <script src="assets/vendor/aos/aos.js"></script>
-
-    <!-- Template Main JS File -->
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/main.js"></script>
 
 </body>
-
 </html>
