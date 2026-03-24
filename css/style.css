@@ -103,3 +103,134 @@ body {
 .download-btn:hover {
     background: #eab308;
 }
+/*certificatite*/
+.cert-card {
+    width: 100%;
+    max-width: 420px;
+    height: 260px; /* SAME HEIGHT FOR BOTH */
+    background: #1e293b;
+    border-radius: 16px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.cert-card:hover {
+    transform: scale(1.05);
+}
+
+.cert-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* keeps proportions */
+    border-radius: 10px;
+}
+
+/* Verify button outside */
+.verify-btn {
+    background: #facc15;
+    color: #111827;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.verify-btn:hover {
+    background: #eab308;
+    transform: scale(2.05);
+}
+
+/*portfolio Section */
+/* FILTER BUTTONS */
+.filter-btn {
+    padding: 8px 18px;
+    border-radius: 999px;
+    background: #1f2937;
+    color: #9ca3af;
+    transition: 0.3s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: #facc15;
+    color: #000;
+}
+
+/* CARD */
+.project-card {
+    transition: all 0.4s ease;
+}
+
+.project-card.hide {
+    opacity: 0;
+    transform: scale(0.8);
+    pointer-events: none;
+}
+
+/* INNER CARD */
+.card-inner {
+    position: relative;
+    background: #1f2937;
+    border-radius: 16px;
+    overflow: hidden;
+    padding: 16px;
+    text-align: center;
+}
+
+.card-inner img {
+    height: 200px;
+    object-fit: contain;
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.card-inner h3 {
+    color: white;
+    margin-top: 12px;
+}
+
+/* HOVER EFFECT */
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.project-card:hover .overlay {
+    opacity: 1;
+}
+
+.project-card:hover img {
+    transform: scale(1.1);
+}
+
+/* BUTTONS */
+.overlay .btns {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.overlay a {
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: #3b82f6;
+    color: white;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.overlay a:hover {
+    background: #2563eb;
+}
